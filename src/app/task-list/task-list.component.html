@@ -1,0 +1,24 @@
+<filter-task 
+  (filter)="filter = $event"></filter-task>
+
+@if (tasks.length === 0) {
+  <ng-container *ngTemplateOutlet="noTasks"></ng-container>
+}
+  @else {
+  <ng-container *ngTemplateOutlet="taskList"></ng-container>
+
+}
+
+<ng-template #noTasks>
+  <div>There are no tasks found in the database.</div>
+</ng-template>
+
+<ng-template #taskList>
+  <ul class="task-list">
+    @for (task of tasks | filter: filter; track task) {
+      <task-list-item
+      [task]="task">
+      </task-list-item>
+    }
+  </ul>
+</ng-template>

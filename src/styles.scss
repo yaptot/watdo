@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: gainsboro;
+    padding: 16px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.text-right {
+    display: block;
+    text-align: right;
+    width: 100%;
+}

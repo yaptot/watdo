@@ -1,0 +1,19 @@
+<div class="form-div">
+    <form [formGroup]="editTaskForm" (ngSubmit)="updateTask()">
+      <input id="name" type="text" class="form-control" formControlName="name" placeholder="Task Name">
+      @if (nameControl?.invalid && nameControl?.touched) {
+        <div class="alert alert-danger">Name is invalid</div>
+      }
+      <textarea class="form-control" formControlName="description" placeholder="Task Description"></textarea>
+      @if (descriptionControl?.invalid && descriptionControl?.touched) {
+        <div class="alert alert-danger">Description is invalid</div>
+      }
+      <input type="date" class="form-control" formControlName="dueDate">
+      @if (dueDateControl?.invalid && dueDateControl?.touched) {
+        <div class="alert alert-danger">Due Date is invalid</div>
+      }
+      <button 
+            type="submit" 
+            class="btn btn-primary">Update</button>
+    </form>
+  </div>

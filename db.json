@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "name": "Learn Angular",
+      "isCompleted": false,
+      "description": "blablablablablablablalbalbalbalba",
+      "dueDate": "2050-12-13T00:00:00.000Z"
+    },
+    {
+      "id": 1,
+      "name": "Get Coffee",
+      "isCompleted": false,
+      "description": "blablablablablablablalbalbalbalba",
+      "dueDate": "2029-12-12T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Cry",
+      "isCompleted": true,
+      "description": "Sorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis",
+      "dueDate": "2025-01-28T00:00:00.000Z"
+    }
+  ]
+}
